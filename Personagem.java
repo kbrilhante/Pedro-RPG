@@ -1,39 +1,22 @@
 public class Personagem {
     private String nome;
     private char classe;
-    private int hpMax, mpMax;
+    protected int hpMax, mpMax;
     private int hp, mp;
     private Inventario inventario;
 
-    public Personagem(String nome, char classe) {
+    public Personagem(String nome) {
         this.nome = nome;
-        this.classe = classe;
         hpMax = 100;
         mpMax = 100;
-        hp = hpMax;
-        mp = mpMax;
         defineStats();
         inventario = new Inventario(8);
         giveStarterKit();
     }
 
-    private void defineStats() {
-        hpMax = 100;
-        mpMax = 100;
-
-        switch (classe) {
-            case 'G':
-                hpMax = 150;        
-                mpMax = 70;
-                break;
-            case 'M':
-                hpMax = 80;
-                mpMax = 200;
-                break;
-            case 'C':
-                mpMax = 150;
-                break;
-        }
+    protected void defineStats() {
+        hp = hpMax;
+        mp = mpMax;
     }
 
     private void giveStarterKit() {
