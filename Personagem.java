@@ -1,6 +1,5 @@
 public class Personagem {
     private String nome;
-    private char classe;
     protected int hpMax, mpMax;
     private int hp, mp;
     private Inventario inventario;
@@ -28,7 +27,6 @@ public class Personagem {
     public void escreveFicha() {
         System.out.println("==== Ficha do Personagem ====");
         System.out.println("Nome: " + nome);
-        System.out.println("Classe: " + classe);
         System.out.println("HP: " + hp + "/" + hpMax);
         System.out.println("MP: " + mp + "/" + mpMax);
         inventario.listaItens();

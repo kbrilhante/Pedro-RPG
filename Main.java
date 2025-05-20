@@ -3,6 +3,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Personagem heroi;
+        Personagem personagem;
+        Guerreiro guerreiro;
+        Mago mago;
+        Curandeiro curandeiro;
         String nome;
         char classe;
 
@@ -24,6 +28,15 @@ public class Main {
             default -> new Personagem(nome);
         };
 
+        personagem = new Personagem("Bob");
+        guerreiro = new Guerreiro("Ragnar");
+        mago = new Mago("Gandalf");
+        curandeiro = new Curandeiro("Sakura");
+
         heroi.escreveFicha();
+        personagem.escreveFicha();
+        guerreiro.escreveFicha();
+        mago.escreveFicha();
+        curandeiro.escreveFicha();
     }
 }
