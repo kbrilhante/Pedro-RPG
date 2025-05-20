@@ -1,8 +1,8 @@
 public class Personagem {
-    private String nome;
+    protected String nome;
     protected int hpMax, mpMax;
-    private int hp, mp;
-    private Inventario inventario;
+    protected int hp, mp;
+    protected Inventario inventario;
 
     public Personagem(String nome) {
         this.nome = nome;

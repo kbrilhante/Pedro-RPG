@@ -38,5 +38,6 @@ public class Main {
         guerreiro.escreveFicha();
         mago.escreveFicha();
         curandeiro.escreveFicha();
+        curandeiro.curaTime();
     }
 }
