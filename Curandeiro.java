@@ -9,6 +9,11 @@ public class Curandeiro extends Personagem{
     }
 
     public void curaTime() {
-        System.out.println(nome + "cura seu grupo em " + poderDeCura + " hp.");
+        System.out.println(nome + " cura seu grupo em " + poderDeCura + " hp.");
+    }
+
+    @Override
+    public void dizNome() {
+        System.out.println("++++ Eu sou " + nome + ". Guardião da cura suprema! ++++");
     }
 }

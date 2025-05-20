@@ -26,7 +26,7 @@ public class Personagem {
 
     public void escreveFicha() {
         System.out.println("==== Ficha do Personagem ====");
-        System.out.println("Nome: " + nome);
+        dizNome();
         System.out.println("HP: " + hp + "/" + hpMax);
         System.out.println("MP: " + mp + "/" + mpMax);
         inventario.listaItens();
@@ -37,5 +37,9 @@ public class Personagem {
         if (inventario.addItem(item) > 0) {
             System.out.println("Inventário cheio");
         }
+    }
+
+    public void dizNome() {
+        System.out.println("Eu sou " + nome + ".");
     }
 }

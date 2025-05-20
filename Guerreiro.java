@@ -7,4 +7,8 @@ public class Guerreiro extends Personagem {
         defineStats();
     }
 
+    @Override
+    public void dizNome() {
+        System.out.println("<<<< Eu sou " + nome + ". A fúria do machado! >>>>");
+    }
 }

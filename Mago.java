@@ -7,4 +7,8 @@ public class Mago extends Personagem {
         defineStats();
     }
 
+    @Override
+    public void dizNome() {
+        System.out.println("*~*~ Eu sou " + nome + ". Mestre do poder arcano! ~*~*");
+    }
 }
