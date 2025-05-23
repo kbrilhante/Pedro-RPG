@@ -29,7 +29,7 @@ public class Main {
 
 
         System.out.println("");
-        time.add(new Personagem("Bob"));
+        // time.add(new Personagem("Bob"));
         time.add(new Guerreiro("Ragnar"));
         time.add(new Mago("Gandalf"));
         time.add(new Curandeiro("Sakura"));

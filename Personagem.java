@@ -1,4 +1,4 @@
-public class Personagem {
+public abstract class Personagem {
     protected String nome;
     protected int hpMax, mpMax;
     protected int hp, mp;
@@ -8,7 +8,6 @@ public class Personagem {
         this.nome = nome;
         hpMax = 100;
         mpMax = 100;
-        defineStats();
         inventario = new Inventario(8);
         giveStarterKit();
     }
