@@ -16,4 +16,11 @@ public class Curandeiro extends Personagem{
     public void dizNome() {
         System.out.println("++++ Eu sou " + nome + ". Guardião da cura suprema! ++++");
     }
+
+    @Override
+    public void ataque() {
+        System.out.println(nome + " bate na cabeça dos seus inimigos com seu cajado.");
+    }
+
+    
 }

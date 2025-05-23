@@ -38,7 +38,7 @@ public abstract class Personagem {
         }
     }
 
-    public void dizNome() {
-        System.out.println("Eu sou " + nome + ".");
-    }
+    public abstract void dizNome();
+
+    public abstract void ataque();
 }

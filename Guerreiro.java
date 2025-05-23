@@ -11,4 +11,11 @@ public class Guerreiro extends Personagem {
     public void dizNome() {
         System.out.println("<<<< Eu sou " + nome + ". A fúria do machado! >>>>");
     }
+
+    @Override
+    public void ataque() {
+        System.out.println(nome + " ataca com seu machado, usando toda sua força.");
+    }
+
+    
 }
